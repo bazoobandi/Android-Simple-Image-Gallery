@@ -10,5 +10,6 @@
     <color name="lightorange">#A6FFA500</color>
     <color name="black">#000000</color>
     <color name="skyblue">#4BB4E9</color>
+    <color name="transparent">#00ffffff</color>
 
 </resources>
