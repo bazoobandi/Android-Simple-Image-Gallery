@@ -55,8 +55,11 @@ public class pictureFolderAdapter extends RecyclerView.Adapter<pictureFolderAdap
                 .apply(new RequestOptions().centerCrop())
                 .into(holder.folderPic);
 
-        String text = "("+folder.getNumberOfPics()+") "+folder.getFolderName();
+        //String text = "("+folder.getNumberOfPics()+") "+folder.getFolderName() + "\n" + folder.getNumberOfPics() + "Media";
+        String text = folder.getFolderName();
+        String subText =folder.getNumberOfPics() + " Media";
         holder.folderName.setText(text);
+        holder.folderSubName.setText(subText);
 
         holder.folderPic.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -76,12 +79,18 @@ public class pictureFolderAdapter extends RecyclerView.Adapter<pictureFolderAdap
     public class FolderHolder extends RecyclerView.ViewHolder{
        ImageView folderPic;
        TextView folderName;
+       TextView folderSubName;
        CardView folderCard;
 
         public FolderHolder(@NonNull View itemView) {
             super(itemView);
            folderPic = itemView.findViewById(R.id.folderPic);
            folderName = itemView.findViewById(R.id.folderName);
+            folderSubName = itemView.findViewById(R.id.folderSubName
+
+
+
+            );
            folderCard = itemView.findViewById(R.id.folderCard);
         }
     }

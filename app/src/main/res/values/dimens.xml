@@ -4,6 +4,8 @@
   <dimen name="activity_vertical_margin">3dp</dimen>
 
   <dimen name="item_margin">1dp</dimen>
+  <dimen name="margin">10dp</dimen>
+  <dimen name="margin_half">5dp</dimen>
   <dimen name="item_margin_half">1dp</dimen>
 
   <dimen name="folder_column_width">120dp</dimen>
